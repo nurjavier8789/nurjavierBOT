@@ -4,7 +4,6 @@ const KeepAlive = require('./server.js')
 let dateformat = require('dateformat')
 require('dotenv').config()
 const mySecret = process.env.TOKEN
-// const mySecret = secret.TOKEN
 
 const moment = require('moment')
 
@@ -279,5 +278,4 @@ client.on('message', async message => {
 
 KeepAlive()
 
-// client.login("NzU1MzYyOTEyMDU4NjA1NjQ5.GD9AD4.Jnjzw7G3BeQV0_2LJtuEV4q-MQeXzLgea5LV40");
 client.login(mySecret);
