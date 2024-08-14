@@ -4,12 +4,11 @@
   "description": "Discord made by nurjavier",
   "main": "main.js",
   "scripts": {
-    "run": "cross-env TOKEN=secret.TOKEN node index.js"
+    "run": "node index.js"
   },
   "author": "nurjavier",
   "license": "ISC",
   "dependencies": {
-    "cross-env": "^7.0.3",
     "dateformat": "^3.0.3",
     "discord.js": "^12.2.0",
     "dotenv": "^16.3.1",

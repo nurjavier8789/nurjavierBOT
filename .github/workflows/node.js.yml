@@ -11,6 +11,8 @@ jobs:
     strategy:
       matrix:
         node-version: [22.x]
+    env:
+      TOKEN: ${{ secrets.TOKEN }}
 
     steps:
     - uses: actions/checkout@v4
@@ -24,6 +26,4 @@ jobs:
       run: npm install
 
     - name: Try to run file
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
       run: npm run run
