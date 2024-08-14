@@ -2,8 +2,8 @@ const discord = require('discord.js');
 const client = new discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"] });
 const KeepAlive = require('./server.js')
 let dateformat = require('dateformat')
-require('dotenv').config()
-const mySecret = process.env.TOKEN
+// require('dotenv').config()
+// const mySecret = process.env.TOKEN
 
 const moment = require('moment')
 
@@ -278,4 +278,4 @@ client.on('message', async message => {
 
 KeepAlive()
 
-client.login(mySecret);
+client.login("NzU1MzYyOTEyMDU4NjA1NjQ5.GD9AD4.Jnjzw7G3BeQV0_2LJtuEV4q-MQeXzLgea5LV40");
