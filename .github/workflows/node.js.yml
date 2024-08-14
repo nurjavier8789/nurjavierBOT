@@ -25,3 +25,5 @@ jobs:
 
     - name: Try to run file
       run: npm run run
+      env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}

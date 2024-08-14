@@ -3,7 +3,7 @@ const client = new discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]
 const KeepAlive = require('./server.js')
 let dateformat = require('dateformat')
 require('dotenv').config()
-const mySecret = process.env['TOKEN']
+const mySecret = process.env.TOKEN
 
 const moment = require('moment')
 
