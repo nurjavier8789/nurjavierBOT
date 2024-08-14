@@ -22,6 +22,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
+    - name: Export variables from secret
+      run: |
+        ENV_JSON='${{ secrets.TOKEN }}'
+        echo "$ENV_JSON" | jq -r 'to_entries[] | "\(.key)=\(.value)"' >> $GITHUB_ENV
+
     - name: Installing dependencies...
       run: npm install
 
