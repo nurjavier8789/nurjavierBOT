@@ -11,8 +11,6 @@ jobs:
     strategy:
       matrix:
         node-version: [22.x]
-    env:
-      TOKEN: ${{ secrets.TOKEN }}
 
     steps:
     - uses: actions/checkout@v4
@@ -22,13 +20,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Export variables from secret
-      run: |
-        ENV_JSON='${{ secrets.TOKEN }}'
-        echo "$ENV_JSON" | jq -r 'to_entries[] | "\(.key)=\(.value)"' >> $GITHUB_ENV
-
     - name: Installing dependencies...
       run: npm install
 
     - name: Try to run file
       run: npm run run
+      env:
+        CI: true
+        TOKEN: ${{ secrets.TOKEN }}
