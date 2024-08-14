@@ -4,13 +4,13 @@
   "description": "Discord made by nurjavier",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "author": "nurjavier",
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
-    "discord.js": "12.2.0",
+    "discord.js": "^12.2.0",
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "moment": "^2.29.1",
