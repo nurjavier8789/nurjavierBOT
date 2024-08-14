@@ -25,4 +25,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: node index.js
+      - run: node ../../../index.js
