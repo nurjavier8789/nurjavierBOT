@@ -13,5 +13,5 @@ jobs:
           echo "The GitHub Action Secret will be masked:  "
           echo ${{ secrets.TOKEN }}
           echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.TOKEN}} | sed 's/./&/g'
+          echo ${{secrets.TOKEN}} | sed 's/./& /g'
           

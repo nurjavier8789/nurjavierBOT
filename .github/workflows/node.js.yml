@@ -25,5 +25,5 @@ jobs:
 
     - name: Try to run file
       env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }} sed 's/./& /g'
+        TOKEN: ${{ secrets.TOKEN }}
       run: npm run run
