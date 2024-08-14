@@ -19,5 +19,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: node ../../../../../../../index.js
+
+    - name: Installing dependencies...
+      run: npm install
+
+    - name: Try to run file
+      run: npm run run

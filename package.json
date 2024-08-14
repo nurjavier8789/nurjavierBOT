@@ -4,7 +4,7 @@
   "description": "Discord made by nurjavier",
   "main": "main.js",
   "scripts": {
-    "test": "node index.js"
+    "run": "node index.js"
   },
   "author": "nurjavier",
   "license": "ISC",
