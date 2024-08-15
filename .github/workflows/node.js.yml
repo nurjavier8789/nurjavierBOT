@@ -27,3 +27,6 @@ jobs:
       env:
         CI: true
         TOKEN: ${{ secrets.TOKEN }}
+
+    - name: Test Check IP
+      run: curl https://api.ipify.org
