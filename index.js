@@ -70,7 +70,13 @@ client.on("messageReactionRemove", async (reaction, user) => {
 
 
 client.once('ready', () => {
-    client.user.setActivity("Something...", { type: "LISTENING" });
+    client.user.setPresence({
+        status: "dnd",
+        activity: {
+            name: "Something...",
+            type: "LISTENING"
+        }
+    });
     console.log('nurjavier BOT is now Online!');
 });
 
