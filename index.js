@@ -71,7 +71,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
 
 client.once('ready', () => {
     client.user.setPresence({
-        status: "dnd",
+        status: "idle",
         activity: {
             name: "Something...",
             type: "LISTENING"
